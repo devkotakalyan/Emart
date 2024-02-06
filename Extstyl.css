@@ -1,0 +1,207 @@
+
+.top_navigation{
+    width: 100%;
+}
+
+.nav{
+    top: 0;
+    border: 2px solid #fcb212;
+    padding: 20px;
+    background-color: #fcb212;
+    font-size: 20px;
+    position: sticky;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: black;
+    box-shadow: 2px 5px 10px #888;
+    position: sticky;
+
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;     */
+}
+
+
+body{
+    background-color: #B7B7B7;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+nav ul{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+nav ul li{
+    
+    position: relative;
+    display: inline-block;
+}
+
+/* logo image styleing  */
+nav ul .logo li a img{
+    position:absolute;
+    top:-10px;
+    right:600px;
+    width: auto;
+    height: 80px;        
+}
+
+
+
+.logo {
+    position: relative;
+}
+
+.content{
+    position:relative;
+    top: -12px;
+    margin-left: 80px;
+    
+}
+
+
+nav ul li a{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+nav ul li input{
+    padding: 10px 20px ;
+    width: 400px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    border: 2px solid #fcb212;
+    border-radius: 15px;
+    /* text-align: center; */
+    height: 15px;
+
+}
+
+nav ul li a:hover{
+    color: whitesmoke;
+}
+
+/* styling sub menu  */
+
+nav ul.nav li:hover ul.subopt{
+    display: inline-block;
+}
+
+ul.nav ul.subopt {
+    display:none;
+    position: absolute;
+    background-color: #fcb212;
+    min-width:150px;
+    left:0;
+    top:100%;
+}
+
+ul.nav ul.subopt li {
+    display:block;
+}
+
+ul.nav ul.subopt li a {
+    padding:10px;
+    color: black;
+    text-decoration: none;
+    display:block;
+}
+
+ul.nav ul.subopt li a:hover {
+    background-color: #888;
+}
+
+.bdy{
+    margin-top: 40px;
+    float: initial;
+}
+
+.bdy ul li{
+    margin-bottom: 10px;
+    text-decoration: none;
+    list-style: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.bdy ul li a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0;
+}
+
+.bdy ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.bdy ul li ul li a img{
+    
+    margin: 5px;
+    width: 280px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.bdy ul li ul li a img:hover{
+    margin: 5px;
+    width: 280px;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #888;
+    transition: fade 2.02s;
+}
+
+.bdy ul li ul li a{
+    
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px 2px 4px;
+}
+
+.bdy ul li ul li{
+    position: relative;
+    display: inline-block;  
+}
+
+.fotter{
+    height: fit-content;
+    text-align: center;
+    background-color: #fcb212;
+    padding: 1px;
+    font-weight: bolder;
+    color: black;
+}
+
+.fotter ul li{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.fotter ul li a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.fotter ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.fotter ul li {
+    padding: 8px;
+}
+
