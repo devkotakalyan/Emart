@@ -1,6 +1,10 @@
 
 .top_navigation{
     width: 100%;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav{
@@ -14,16 +18,7 @@
     font-weight: bolder;
     color: black;
     box-shadow: 2px 5px 10px #888;
-    position: sticky;
-    position:-webkit-sticky;
     
-
-    /* position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding: 5px;
-    background-color: #cae8ca;
-    border: 2px solid #4CAF50;     */
 }
 
 
@@ -128,6 +123,11 @@ ul.nav ul.subopt li a:hover {
     float: initial;
 }
 
+.bdy ul.slider li a img{
+    width: 200px;
+    height: auto;
+}
+
 .bdy ul li{
     margin-bottom: 10px;
     text-decoration: none;
@@ -207,3 +207,18 @@ ul.nav ul.subopt li a:hover {
     padding: 8px;
 }
 
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .slide_image {
+    animation: slide 5s infinite;
+  }
