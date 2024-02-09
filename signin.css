@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
@@ -10,6 +14,12 @@ body {
     margin: 0 auto;
     margin-top: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+
 }
 
 .inpfld {
@@ -35,6 +45,7 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 
 button {
+    font-size: 20px;
     background-color: #fcb212;
     color: white;
     padding: 14px 20px;
@@ -49,18 +60,22 @@ button:hover {
     opacity: 0.8;
 }
 
-.opt {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
 
-.opt a {
+
+.rem a {
+    display: block;
+    float: right;
+    /* text-align: right; */
+    /* margin-right: 10px; */
     color: #000;
     text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
 }
 
-.opt a:hover {
-    color: #000;
-    text-decoration: underline;
+
+
+.rem a:hover {
+    color: #fcb212;
+    text-decoration: none;
 }
