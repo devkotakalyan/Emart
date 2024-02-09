@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <input type="text" name="" id="">
-        
-    </div>
+    <form action="">
+        <div class="container">
+            <div class="inpfld">
+                <label for="Username">Username: </label>
+                <input type="text" name="Username" id="Username" placeholder="" required>
+            </div>
+            <div class="inpfld">
+                <label for="Password">Password: </label>
+                <input type="password" name="Password" id="Password" placeholder="" required>
+            </div>
+            <div class="opt">
+                <input type="checkbox" name="Remember_me" id="Remember_me" placeholder="">
+                <a href="">Forget Password</a>
+            </div>
+            <div class="btn">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+    </form>
 </body>
 </html>

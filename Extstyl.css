@@ -207,18 +207,16 @@ ul.nav ul.subopt li a:hover {
     padding: 8px;
 }
 
-@keyframes slide {
+@keyframes slide{
     0% {
       transform: translateX(0);
     }
-    50% {
-      transform: translateX(100px);
-    }
+
     100% {
-      transform: translateX(0);
+      transform: translateX(100px);
     }
   }
   
   .slide_image {
-    animation: slide 5s infinite;
+    animation: slide 2s infinite;
   }
