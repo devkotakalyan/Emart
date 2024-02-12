@@ -28,7 +28,8 @@ h1{
 
 input[type="text"], input[type="password"] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px;
+    font-size: large;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -45,6 +46,7 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 
 button {
+    margin-top: 10px;
     font-size: 20px;
     background-color: #fcb212;
     color: white;
@@ -65,8 +67,8 @@ button:hover {
 .rem a {
     display: block;
     float: right;
-    /* text-align: right; */
-    /* margin-right: 10px; */
+    text-align: right;
+    margin-right: 10px;
     color: #000;
     text-decoration: none;
     color: black;
