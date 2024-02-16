@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .top_navigation{
     width: 100%;
@@ -9,23 +13,21 @@
 
 .nav{
     top: 0;
-    border: 2px solid #fcb212;
+    border: 2px solid 	#E5E4E2;
     padding: 20px;
-    background-color: #fcb212;
+    background-color: 	#E5E4E2;
     font-size: 20px;
     position: sticky;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    color: black;
-    box-shadow: 2px 5px 10px #888;
+    color: #8A9A5B;
+    box-shadow: 0px 0px 10px #888;
     
 }
 
-
 body{
-    background-color: #B7B7B7;
+    background-color: #D3D3D3;
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
 }
 
 nav ul{
@@ -58,15 +60,14 @@ nav ul .logo li a img{
 .content{
     position:relative;
     top: -12px;
-    margin-left: 80px;
-    
+    margin-left: 80px 
 }
 
 
 nav ul li a{
     padding: 10px 15px;
     text-decoration: none;
-    color: black;
+    color: #8A9A5B;
     transition: background-color 0.3s;
 }
 
@@ -74,33 +75,99 @@ nav ul li input{
     padding: 10px 20px ;
     width: 400px;
     text-decoration: none;
-    color: black;
+    color: #8A9A5B;
     font-size: large;
-    border: 2px solid #fcb212;
-    border-radius: 15px;
-    text-align: center;
+    border: 2px solid #E5E4E2;
+    border-radius: 10px;
+    /* text-align: center; */
     height: 15px;
 }
 
-/* nav ul li input:active{
-    border: none;
-} */
-
-nav ul li a:hover{
-    color: whitesmoke;
+nav ul li input:focus {
+    outline: none;
+    border: 2px solid #8A9A5B;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #353935;
+
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 0px;
+    width: 10px;
+    background-color:#E5E4E2;
+}
+
+nav ul li a:hover{
+    color:	#818589;
+}
+
+/* styling quick navigation*/
+
+.qnav{
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    word-spacing: 2px;
+    position:absolute;
+    z-index: 500;
+    top: 117px;
+    text-align: center;
+    right: 1100px;    
+    margin-top: 40px;
+    background-color: #E5E4E2;
+    font-weight: bolder;
+    color: #8A9A5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qnav ul li{
+    list-style: none;
+}
+
+.qnav ul li ul li{
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.qnav ul li ul li a{
+    display: block;
+    text-decoration: none;
+    color: #8A9A5B;
+    margin-bottom: 0;
+
+}
+
+.qnav ul li a:hover{
+    text-decoration: none;
+    color: 	#818589;
+}
+
+.qnav ul li {
+    padding: 8px;
+}
+
+
+/* styling the body */
 .bdy{
     margin-top: 40px;
     float: initial;
+    padding-left: 40px;
 }
 
+
 .bdy ul.slider li a img{
-    width: 200px;
-    height: auto;
+    width: 600px;
+    height: 360px;
 }
 
 .bdy ul li{
+    padding: 10px;
     margin-bottom: 10px;
     text-decoration: none;
     list-style: none;
@@ -110,13 +177,13 @@ nav ul li a:hover{
 
 .bdy ul li a{
     text-decoration: none;
-    color: black;
+    color: #8A9A5B;
     margin-bottom: 0;
 }
 
 .bdy ul li a:hover{
     text-decoration: none;
-    color: white;
+    color: 	#818589;
 }
 
 .bdy ul li ul li a img{
@@ -137,7 +204,6 @@ nav ul li a:hover{
 }
 
 .bdy ul li ul li a{
-    
     position: relative;
     display: inline-block;
     margin: 0px 0px 2px 4px;
@@ -151,10 +217,10 @@ nav ul li a:hover{
 .fotter{
     height: fit-content;
     text-align: center;
-    background-color: #fcb212;
-    padding: 1px;
+    background-color: 	#E5E4E2;
+    padding: 20px;
     font-weight: bolder;
-    color: black;
+    color: #8A9A5B;
 }
 
 .fotter ul li{
@@ -165,14 +231,14 @@ nav ul li a:hover{
 
 .fotter ul li a{
     text-decoration: none;
-    color: black;
+    color: #8A9A5B;
     margin-bottom: 0;
     font-size: 30px;
 }
 
 .fotter ul li a:hover{
     text-decoration: none;
-    color: white;
+    color: 	#818589;
 }
 
 .fotter ul li {
@@ -181,14 +247,14 @@ nav ul li a:hover{
 
 @keyframes slide{
     0% {
-      transform: translateX(0);
+      transform: translateX(200px);
     }
 
     100% {
-      transform: translateX(100px);
+      transform: translateX(400px);
     }
   }
   
   .slide_image {
-    animation: slide 2s infinite;
+    animation: slide 3s infinite;
   }
