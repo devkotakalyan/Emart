@@ -107,6 +107,7 @@ nav ul li a:hover{
 /* styling quick navigation*/
 
 .qnav{
+    /* box-shadow: 0px 0px 10px #8A9A5B; */
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
     word-spacing: 2px;
@@ -119,9 +120,11 @@ nav ul li a:hover{
     background-color: #E5E4E2;
     font-weight: bolder;
     color: #8A9A5B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.qnav ul li h3{
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .qnav ul li{
@@ -160,11 +163,27 @@ nav ul li a:hover{
     padding-left: 40px;
 }
 
-
-.bdy ul.slider li a img{
+.bdy .slider li marquee img{
     width: 600px;
     height: 360px;
+    margin-left: 10px;
 }
+
+marquee{
+    margin: 10px;
+    position: relative;
+    display: block;
+    right: -200px;
+    top: -10.5px;
+    direction: rtl;
+    overflow: hidden;
+    font-size: 17px;
+    /* border: 1px solid #8A9A5B; */
+    direction: "right"; 
+    width: 1085px;
+    height: 359px;
+}
+
 
 .bdy ul li{
     padding: 10px;
@@ -245,12 +264,4 @@ nav ul li a:hover{
     padding: 8px;
 }
 
-@keyframes slide{
-    0% {
-      transform: translateX(200px);
-    }
-  }
-  
-  .slide_image {
-    animation: slide 3s infinite;
-  }
+
