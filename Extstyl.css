@@ -249,10 +249,6 @@ nav ul li a:hover{
     0% {
       transform: translateX(200px);
     }
-
-    100% {
-      transform: translateX(400px);
-    }
   }
   
   .slide_image {
