@@ -107,22 +107,24 @@ nav ul li a:hover{
 /* styling quick navigation*/
 
 .qnav{
+    
     /* box-shadow: 0px 0px 10px #8A9A5B; */
     margin-right: 20px;
+    width: auto;
+    height: 295px;
+    display: inline-block;
     vertical-align: middle;
     font-family: 'Montserrat', sans-serif;
-    padding: 20px;
-    word-spacing: 2px;
-    display: inline-block;
-    text-align: center;
-    right: 1100px;    
-    margin-top: 40px;
+    padding: 10px 12px;
+    text-align: center;   
+    margin-top: 0px;
     background-color: #E5E4E2;
     font-weight: bolder;
     color: #8A9A5B;
 }
 
 .qnav h3{
+    padding-top: 10px;
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -132,13 +134,14 @@ nav ul li a:hover{
 }
 
 .qnav ul li{
+    margin-bottom: 10px;
     text-align: left;
     list-style: none;
-    text-decoration: none;
 
 }
 
-.qnav  ul li a{
+.qnav ul li a{
+    font-size: larger;
     text-decoration: none;
     color: #8A9A5B;
     margin-bottom: 0;
@@ -150,34 +153,25 @@ nav ul li a:hover{
     color: 	#818589;
 }
 
-.qnav ul li {
-    padding: 8px;
-}
-
 /* styling the body */
-.bdy{
-    margin-top: 40px;
-    float: initial;
-    padding-left: 40px;
-}
 
 .offers{
+    /* border: 1px solid; */
     vertical-align: middle;
     display: inline-block;
     width: 80%;
     overflow: hidden;
-    padding: 10px 0;
     white-space: nowrap;
 }
 
 .offers-slide{
-    animation: 30s slide infinite linear;
+    animation: 10s slide infinite linear;
     display: inline-block;
 }
 
 
 .offers-slide img{
-    height: 300px;
+    height: 320px;
     width: auto;
     margin: 0 10px;
 }
@@ -192,7 +186,12 @@ nav ul li a:hover{
 
 }
 
-.bdy ul li{
+.bdy{
+    margin-top: 40px;
+    float: initial;
+    padding-left: 40px;
+}
+.bdy .items ul li{
     padding: 10px;
     margin-bottom: 10px;
     text-decoration: none;
@@ -201,18 +200,18 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
-.bdy ul li a{
+.bdy .items ul li a{
     text-decoration: none;
     color: #8A9A5B;
     margin-bottom: 0;
 }
 
-.bdy ul li a:hover{
+.bdy .items ul li a:hover{
     text-decoration: none;
     color: 	#818589;
 }
 
-.bdy ul li ul li a img{
+.bdy .items ul li ul li a img{
     
     margin: 5px;
     width: 280px;
@@ -220,7 +219,7 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 
-.bdy ul li ul li a img:hover{
+.bdy .items ul li ul li a img:hover{
     margin: 5px;
     width: 280px;
     height: 180px;
@@ -229,13 +228,13 @@ nav ul li a:hover{
     transition: fade 2.02s;
 }
 
-.bdy ul li ul li a{
+.bdy .items ul li ul li a{
     position: relative;
     display: inline-block;
     margin: 0px 0px 2px 4px;
 }
 
-.bdy ul li ul li{
+.bdy .items ul li ul li{
     position: relative;
     display: inline-block;  
 }
