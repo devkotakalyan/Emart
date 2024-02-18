@@ -207,15 +207,6 @@ nav ul li a:hover{
     margin-bottom: 0;
 }
 
-.bdy .items ul li a figcaption{
-    text-align: center;
-    font-size: medium;
-    color: #353935;
-    width: 70%;
-    white-space: nowrap;
-    border: 2px solid;
-    overflow: hidden;
-}
 
 .bdy .items ul li a:hover{
     text-decoration: none;
@@ -243,6 +234,14 @@ nav ul li a:hover{
     position: relative;
     display: inline-block;
     margin: 0px 0px 2px 4px;
+}
+.bdy .items ul li ul li a figcaption{
+    text-align: center;
+    font-size: medium;
+    color: #353935;
+    white-space: nowrap;
+    /* border: 2px solid; */
+    overflow: hidden;
 }
 
 .bdy .items ul li ul li{
