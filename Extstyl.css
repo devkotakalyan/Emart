@@ -281,3 +281,61 @@ nav ul li a:hover{
 }
 
 
+/* item styling */
+.object{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bdy .ite .object img{
+    display: inline-block;
+    background-color: white;
+    width: 340px;
+    height: 320px;
+}
+
+.bdy .ite .object button{
+    width: 340px;
+    border: none;
+    background-color: #8A9A5B;
+    font-size: 25px;
+    padding: 10px;
+    height: auto;
+}
+
+.bdy .ite .object button:hover{
+    width: 340px;
+    border: none;
+    background-color: #8A9A5B;
+    font-size: 25px;
+    padding: 10px;
+    height: auto;
+    opacity: 0.8;
+    transition: 10ms;
+    cursor: pointer;
+}
+
+.ite{
+    border: 1px solid #8A9A5B;
+    width: 1275px;
+}
+
+.bdy .ite .object{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bdy .ite .specs {
+    /* border: 2px solid; */
+    display: inline-block;
+    background-color: white;
+    padding: 15px;
+}
+
+.bdy .ite .specs ul{
+    list-style: none;
+}
+
+.bdy .ite .specs ul li p{
+    width: 900px;
+    
+}
