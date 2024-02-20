@@ -30,7 +30,7 @@
             <div class="object">
                 <img src="https://www.ekfluidgaming.com/media/catalog/product/cache/6/image/x800/9df78eab33525d08d6e5fb8d27136e95/0/1/01_product_listing_ek-fluid_gaming_conqueror_4__1.png" alt="">
                 <br>
-                <a href=""><button type="submit">Purchase</button></a>
+                <button type="submit" onclick="openForm()">Purchase</button>
             </div>
             <div class="specs">    
                 <ul class="discription">
@@ -52,13 +52,81 @@
                             <li><b>Storage1:</b> Samsaung 990 EVO 5.0 NVMe SSD 2TB</li>
                             <li><b>Storage2:</b> Samsaung 870 EVO SATA III SSD 4TB x2</li>
                         </ul>
-                        <br>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="seller">
-                
+        <div id="popupForm" class="popup">
+            <div class="popup-content">
+                <div class="deliver">
+                    <form action="">
+                        <h1>Delivery Details</h1>
+                    <div class="address-bar">
+                        <h3 align="left">Address:</h3>
+                        <label for="province">Province: </label>
+                        <select name="address-province" id="address-province">
+                            <option value="">Select province</option>
+                            <option value="">Bagmati</option>
+                            <option value="">Gandaki</option>
+                            <option value="">Karnali</option>
+                            <option value="">Lumbini</option>
+                            <option value="">Koshi</option>
+                            <option value="">Madhesh</option>
+                            <option value="">Sudurpuschim</option>
+                        </select>
+                        <br>
+                        <label for="district">Select a District:</label>
+                        <select id="district">
+                            <option value="">Select District</option>
+                            <option value="">Sindhuli</option>
+                            <option value="">Ramechhap</option>
+                            <option value="">Dolakha</option>
+                            <option value="">Bhaktapur</option>
+                            <option value="">Dhading</option>
+                            <option value="">Kathmandu</option>
+                            <option value="">Kavrepalanchok</option>
+                            <option value="">Lalitpur</option>
+                            <option value="">Nuwakot</option>
+                            <option value="">Rasuwa</option>
+                            <option value="">Sindhupalchok</option>
+                            <option value="">Chitwan</option>
+                            <option value="">Makwanpur</option>
+                        </select>
+                        <br>
+                        <label for="Address">Address</label>
+                        <input type="text" id="address" placeholder="" required>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="informationbar">
+                        <h3 align="left">Buyer's Information: </h3>
+                        <label for="phone">Phone Number: </label>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{6}" maxlength="10" required>
+                        <br>
+                        <label for="email">Email Address: </label>
+                        <input type="email" name="email" id="email" placeholder="" required>
+                        <br>
+                        <label for="Name">Buyer's Name: </label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="btnfld">
+                        <button type="submit" onclick="addDeliver()">Submit</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="items">
+            <ul class="catalog">
+                <li><h2>More By Seller: </h2>
+                    <ul>
+                        <li><a href="#"><img src="https://www.asus.com/media/Odin/Websites/global/ProductLine/20200824120814.jpg" alt=""><figcaption>Asus RX-3400 Gamer Edition</figcaption></a></li>
+                        <li><a href="#"><img src="https://static-01.daraz.com.np/p/7ad8ac71c00aec13da4066c291afc275.jpg" alt=""><figcaption>Tripod Stand for Camera</figcaption></a></li>
+                        <li><a href="#"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2d48KMw--f7rTj6BmocKojfs7DHY40xm6juL1Lme_GiCAeaRj4EQPKM-d7prEee-aCrVtPSgobyT8Dsj9vmUKeyQFivTTHmpnesrXeZ_qQsy3_7AIx3wBqzBq534g_J5yoc5MCOQYr9gg9zwcTzXMtOuA71ISnRGdJbWI4stVYF-lqvn_bgJYcpFI/s940/DSCF1184.acr.jpeg" alt=""><figcaption>Cannon E-2000 Camera</figcaption></a></li>
+                        <li><a href="Item.html"><img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-74560,resizemode-75,msid-104220582/top-trending-products/electronics/laptops/best-gaming-computer-sets-for-an-unparalleled-experience-starting-at-just-23999.jpg" alt=""><figcaption>Gamimg PC And More</figcaption></a></li>
+                    </ul>
+                </li>            
+            </ul>
         </div>
     </div>
     <div class="fotter">
@@ -71,5 +139,11 @@
             <li><a href="mailto:Kalyandevkota234@gmail.com?subject=Feedback&body=Message"  target="_blank"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+    </script>
 </body>
 </html>

@@ -315,7 +315,8 @@ nav ul li a:hover{
 }
 
 .ite{
-    border: 1px solid #8A9A5B;
+    /* border: 1px solid #8A9A5B; */
+    background-color: white;
     width: 1275px;
 }
 
@@ -327,7 +328,7 @@ nav ul li a:hover{
 .bdy .ite .specs {
     /* border: 2px solid; */
     display: inline-block;
-    background-color: white;
+    /* background-color: white; */
     padding: 15px;
 }
 
@@ -337,5 +338,100 @@ nav ul li a:hover{
 
 .bdy .ite .specs ul li p{
     width: 900px;
-    
+}
+
+
+/* Popup container */
+#popupForm{
+    display: none;
+    background-color: rgba(0,0,0,0.4);
+    width: 600px; 
+    font-size: large;
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fefefe;
+    /* margin: 5% auto; */
+    padding: 20px;
+    /* border: 1px solid #888; */
+}
+
+.popup .popup-content .deliver input[type="tel"]{
+    padding: 10px;
+    width: 200px;
+    text-decoration: none;
+    color: #8A9A5B;
+    font-size: large;
+    border: 2px solid #E5E4E2;
+    border-radius: 10px;
+    height: 15px;
+}
+
+.popup .popup-content .deliver input[type="tel"]:focus {
+    outline: none;
+    border: 2px solid #8A9A5B;
+}
+
+.popup .popup-content .deliver input[type="text"], input[type="email"]{
+    padding: 10px;
+    width: 300px;
+    text-decoration: none;
+    color: #8A9A5B;
+    font-size: large;
+    border: 2px solid #E5E4E2;
+    border-radius: 10px;
+    height: 15px;
+}
+
+.popup .popup-content .deliver input[type="text"]:focus, input[type="email"]:focus{
+    outline: none;
+    border: 2px solid #8A9A5B;
+}
+
+.popup .popup-content .deliver select{
+    padding: 10px;
+    width: 180px;
+    text-decoration: none;
+    color: #8A9A5B;
+    font-size: large;
+    border: 2px solid #E5E4E2;
+    border-radius: 10px;
+}
+
+.popup .popup-content .deliver button{
+    width: 340px;
+    border: none;
+    background-color: #8A9A5B;
+    font-size: 20px;
+    padding: 10px;
+    height: auto;
+}
+
+.popup .popup-content .deliver button:hover{
+    width: 340px;
+    border: none;
+    background-color: #8A9A5B;
+    font-size: 20px;
+    padding: 10px;
+    height: auto;
+    opacity: 0.8;
+    transition: 10ms;
+    cursor: pointer;
+}
+
+.address-bar{
+    padding-top: 20px;
+    text-align: left;
+}
+
+.informationbar{
+    word-spacing: 10;
+    letter-spacing: 10;
+    text-align: left;
+}
+
+.btnfld{
+    margin-left: 20px;
+    padding-top: 20px;
 }
