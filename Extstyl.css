@@ -359,23 +359,26 @@ nav ul li a:hover{
 
 .popup .popup-content .deliver input[type="tel"]{
     padding: 10px;
+    margin-bottom: 10px;
     width: 200px;
     text-decoration: none;
     color: #8A9A5B;
     font-size: large;
     border: 2px solid #E5E4E2;
-    border-radius: 10px;
+    border-radius: 0px;
     height: 15px;
 }
 
 .popup .popup-content .deliver input[type="tel"]:focus {
     outline: none;
+    margin-bottom: 10px;
     border: 2px solid #8A9A5B;
 }
 
 .popup .popup-content .deliver input[type="text"], input[type="email"]{
     padding: 10px;
     width: 300px;
+    margin-bottom: 10px;
     text-decoration: none;
     color: #8A9A5B;
     font-size: large;
@@ -386,12 +389,14 @@ nav ul li a:hover{
 
 .popup .popup-content .deliver input[type="text"]:focus, input[type="email"]:focus{
     outline: none;
+    margin-bottom: 10px;
     border: 2px solid #8A9A5B;
 }
 
 .popup .popup-content .deliver select{
     padding: 10px;
     width: 180px;
+    margin-bottom: 10px;
     text-decoration: none;
     color: #8A9A5B;
     font-size: large;
@@ -399,8 +404,9 @@ nav ul li a:hover{
     border-radius: 10px;
 }
 
-.popup .popup-content .deliver button{
-    width: 340px;
+.popup .popup-content .deliver #pass{
+    width: 150px;
+    margin-bottom: 10px;
     border: none;
     background-color: #8A9A5B;
     font-size: 20px;
@@ -408,8 +414,8 @@ nav ul li a:hover{
     height: auto;
 }
 
-.popup .popup-content .deliver button:hover{
-    width: 340px;
+.popup .popup-content .deliver #pass:hover{
+    width: 150px;
     border: none;
     background-color: #8A9A5B;
     font-size: 20px;
@@ -434,4 +440,26 @@ nav ul li a:hover{
 .btnfld{
     margin-left: 20px;
     padding-top: 20px;
+}
+
+.popup .popup-content .deliver #close{
+    width: 150px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #8A9A5B;
+    font-size: 20px;
+    padding: 10px;
+    height: auto;
+}
+
+.popup .popup-content .deliver #close:hover{
+    width: 150px;
+    border: none;
+    background-color: #818589;
+    font-size: 20px;
+    padding: 10px;
+    height: auto;
+    opacity: 0.8;
+    transition: 10ms;
+    cursor: pointer;
 }

@@ -110,7 +110,8 @@
                         <input type="text" name="name" id="name" required>
                     </div>
                     <div class="btnfld">
-                        <button type="submit" onclick="addDeliver()">Submit</button>
+                        <button type="submit" id="pass" onclick="addDeliver()">Submit</button>
+                        <button type="submit" id="close" onclick="closeForm()">Cancel</button>
                     </div>
                     </form>
                 </div>
@@ -139,11 +140,16 @@
             <li><a href="mailto:Kalyandevkota234@gmail.com?subject=Feedback&body=Message"  target="_blank"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </div>
-
     <script>
+
         function openForm() {
-            document.getElementById("myForm").style.display = "block";
+            document.getElementById("popupForm").style.display = "block";
+        } 
+    
+        function closeForm() {
+            document.getElementById("popupForm").style.display = "none";
         }
+
     </script>
 </body>
 </html>
