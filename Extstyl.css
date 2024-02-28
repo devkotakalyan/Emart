@@ -25,7 +25,7 @@
     
 }
 
-body{
+#body{
     background-color: #D3D3D3;
     font-family: 'Montserrat', sans-serif;
 }
@@ -60,7 +60,7 @@ nav ul .logo li a img{
 .content{
     position:relative;
     top: -12px;
-    margin-left: 80px 
+    margin-left: 40px 
 }
 
 
@@ -73,7 +73,7 @@ nav ul li a{
 
 nav ul li input{
     padding: 10px 20px ;
-    width: 400px;
+    width: 300px;
     text-decoration: none;
     color: #8A9A5B;
     font-size: large;

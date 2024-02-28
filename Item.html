@@ -7,20 +7,23 @@
     <script src="https://kit.fontawesome.com/b599156702.js" crossorigin="anonymous"></script>
     <title>D&D Ark Raptor-V2</title>
 </head>
-<body>
+<body id="body">
     <div class="top_navigation">
         <nav>
-            <ul class="nav">
+            <ul id="nav" class="nav">
                 <div class="logo">
                     <li><a href="#"><img id="logo" src="logo-no-background.svg" alt=""></a></li>
                 </div>
                 <div class="content">
                     <li><a href="Dashboard.html">Home <i class="fas fa-home"></i></a></li>
+                    <li></li>
                     <li><a href="#">Promo code <i class="fas fa-percentage"></i></a></li>
                     <li><input type="text" name="" placeholder="Search Box" id="serch"><a href=""><i class="fas fa-search"></i></a></li>
                     <li><a href="#">Wish list <i class="fas fa-heart"></i></a></li>
                     <li><a href="#">Cart <i class="fas fa-cart-shopping"></i></a></li>
                     <li><a href="signin.html">Account <i class="fas fa-user "></i></a></li>
+                    <li><button onclick="coler_change()" id="col_btn">Dark</button></li>
+                    <li><button onclick="coler_rev()" id="col_btn">Light</button></li>
                 </div>
             </ul>
         </nav>
@@ -148,6 +151,19 @@
     
         function closeForm() {
             document.getElementById("popupForm").style.display = "none";
+            alert("Order Canceled by the user");
+        }
+
+        function coler_change() {
+            document.getElementById("nav").style.background = "#444";
+            document.getElementById("nav").style.border = "#444";
+            document.getElementById("body").style.background = "#444";
+        }
+        
+        function coler_rev() {
+            document.getElementById("nav").style.background = "#E5E4E2";
+            document.getElementById("nav").style.border = "#E5E4E2";
+            document.getElementById("body").style.background = "#E5E4E2";
         }
 
     </script>
