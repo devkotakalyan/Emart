@@ -13,9 +13,9 @@
 
 .nav{
     top: 0;
-    border: 2px solid 	#E5E4E2;
+    border: #E5E4E2;
     padding: 20px;
-    background-color: 	#E5E4E2;
+    background-color:#E5E4E2;
     font-size: 20px;
     position: sticky;
     font-family: 'Montserrat', sans-serif;
@@ -316,7 +316,7 @@ nav ul li a:hover{
 
 .ite{
     /* border: 1px solid #8A9A5B; */
-    background-color: white;
+    background-color: #E5E4E2;
     width: 1275px;
 }
 
@@ -462,4 +462,9 @@ nav ul li a:hover{
     opacity: 0.8;
     transition: 10ms;
     cursor: pointer;
+}
+
+.col_btn{
+    border: 2px  solid black;
+    padding: 2px;
 }

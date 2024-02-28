@@ -7,10 +7,10 @@
     <title>Home Page</title>
     <script src="https://kit.fontawesome.com/b599156702.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
     <div class="top_navigation">
         <nav>
-            <ul class="nav">
+            <ul class="nav" id="nav">
                 <div class="logo">
                     <li><a href="#"><img id="logo" src="logo-no-background.svg" alt=""></a></li>
                 </div>
@@ -21,6 +21,8 @@
                     <li><a href="#">Wish list <i class="fas fa-heart"></i></a></li>
                     <li><a href="#">Cart <i class="fas fa-cart-shopping"></i></a></li>
                     <li><a href="signin.html">Account <i class="fas fa-user "></i></a></li>
+                    <li><button onclick="coler_change()" class="col_btn">Dark</button></li>
+                    <li><button onclick="coler_rev()" class="col_btn">Light</button></li>
                 </div>
             </ul>
         </nav>
@@ -95,7 +97,7 @@
             </ul>
         </div>
     </div>
-    <div class="fotter">
+    <div class="fotter" id="fotter">
         <ul>
             <h3>Follow us and give Feedback on</h3>
             <li><a href="https://www.facebook.com/kalyan.devkota.1/" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -106,5 +108,25 @@
             <p>&copy; Kalyan Devkota</p>
         </ul>
     </div>
+    <script>
+        function coler_change() {
+            document.getElementById("nav").style.background = "#0F0F0F";
+            document.getElementById("body").style.background = "#444";
+            document.getElementById("fotter").style.background ="#0F0F0F";
+            document.getElementById("ite").style.background ="#0F0F0F";
+            document.getElementById("ite").style.color ="#E5E4E2";
+            document.getElementById("items").style.color ="white";
+        }
+        
+        function coler_rev() {
+            document.getElementById("nav").style.background = "#E5E4E2";
+            document.getElementById("body").style.background = "#D3D3D3";
+            document.getElementById("fotter").style.background ="";
+            document.getElementById("ite").style.background ="#E5E4E2";
+            document.getElementById("ite").style.color ="";
+            document.getElementById("items").style.color ="";
+        }
+
+    </script>
 </body>
 </html>

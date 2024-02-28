@@ -22,21 +22,21 @@
                     <li><a href="#">Wish list <i class="fas fa-heart"></i></a></li>
                     <li><a href="#">Cart <i class="fas fa-cart-shopping"></i></a></li>
                     <li><a href="signin.html">Account <i class="fas fa-user "></i></a></li>
-                    <li><button onclick="coler_change()" id="col_btn">Dark</button></li>
-                    <li><button onclick="coler_rev()" id="col_btn">Light</button></li>
+                    <li><button onclick="coler_change()" class="col_btn">Dark</button></li>
+                    <li><button onclick="coler_rev()" class="col_btn">Light</button></li>
                 </div>
             </ul>
         </nav>
     </div>
     <div class="bdy">
-        <div class="ite">
+        <div class="ite" id="ite">
             <div class="object">
                 <img src="https://www.ekfluidgaming.com/media/catalog/product/cache/6/image/x800/9df78eab33525d08d6e5fb8d27136e95/0/1/01_product_listing_ek-fluid_gaming_conqueror_4__1.png" alt="">
                 <br>
                 <button type="submit" onclick="openForm()">Purchase</button>
             </div>
             <div class="specs">    
-                <ul class="discription">
+                <ul class="discription" id="discription">
                     <li>
                         <li><h1>Rs 2,50,000</h1>
                             <p><strike>Rs 3,00,000 </strike></p>
@@ -60,7 +60,7 @@
             </div>
         </div>
         <div id="popupForm" class="popup">
-            <div class="popup-content">
+            <div class="popup-content" id="popup-content">
                 <div class="deliver">
                     <form action="">
                         <h1>Delivery Details</h1>
@@ -120,7 +120,7 @@
                 </div>
             </div>
         </div>
-        <div class="items">
+        <div class="items" id="items">
             <ul class="catalog">
                 <li><h2>More By Seller: </h2>
                     <ul>
@@ -133,7 +133,7 @@
             </ul>
         </div>
     </div>
-    <div class="fotter">
+    <div class="fotter" id="fotter">
         <ul>
             <h3>Follow us and give Feedback on</h3>
             <li><a href="https://www.facebook.com/kalyan.devkota.1/" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -155,15 +155,21 @@
         }
 
         function coler_change() {
-            document.getElementById("nav").style.background = "#444";
-            document.getElementById("nav").style.border = "#444";
+            document.getElementById("nav").style.background = "#0F0F0F";
             document.getElementById("body").style.background = "#444";
+            document.getElementById("fotter").style.background ="#0F0F0F";
+            document.getElementById("ite").style.background ="#0F0F0F";
+            document.getElementById("ite").style.color ="#E5E4E2";
+            document.getElementById("items").style.color ="white";
         }
         
         function coler_rev() {
             document.getElementById("nav").style.background = "#E5E4E2";
-            document.getElementById("nav").style.border = "#E5E4E2";
-            document.getElementById("body").style.background = "#E5E4E2";
+            document.getElementById("body").style.background = "#D3D3D3";
+            document.getElementById("fotter").style.background ="";
+            document.getElementById("ite").style.background ="#E5E4E2";
+            document.getElementById("ite").style.color ="";
+            document.getElementById("items").style.color ="";
         }
 
     </script>
