@@ -343,6 +343,8 @@ nav ul li a:hover{
 
 /* Popup container */
 #popupForm{
+    float: initial;
+    z-index: 1000;
     display: none;
     background-color: rgba(0,0,0,0.4);
     width: 600px; 
@@ -466,5 +468,17 @@ nav ul li a:hover{
 
 .col_btn{
     border: 2px  solid black;
-    padding: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    float: initial;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1000;
+    font-weight: bold;
 }
+
+.col_btn:hover{
+    box-shadow: 3px;
+    cursor: pointer;
+}
+
